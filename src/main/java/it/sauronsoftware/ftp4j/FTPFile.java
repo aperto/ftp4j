@@ -107,6 +107,14 @@ public class FTPFile {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public boolean isDirectory() {
+	    return type == TYPE_DIRECTORY;
+	}
+	
+	public boolean isFile() {
+	    return type == TYPE_FILE;
+	}
 
 	/**
 	 * Returns the type of the entry represented. It must be
